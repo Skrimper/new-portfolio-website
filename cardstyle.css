@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .grid-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  .card img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: background-color 0.5s ease;
+  }
+  .card h3,
+  .card p {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .card:hover::before {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .card:hover h3,
+  .card:hover p {
+    opacity: 1;
+  }
+  .card1::before {
+    background-color: rgba(30, 144, 255, 0.2);
+  }
+  .card1:hover::before {
+    background-color: rgba(30, 144, 255, 0.6);
+  }
+  .card2::before {
+    background-color: rgba(255, 99, 71, 0.2);
+  }
+  .card2:hover::before {
+    background-color: rgba(255, 99, 71, 0.6);
+  }
+  .card3::before {
+    background-color: rgba(60, 179, 113, 0.2);
+  }
+  .card3:hover::before {
+    background-color: rgba(60, 179, 113, 0.6);
+  }
