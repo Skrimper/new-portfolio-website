@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-    <h1>Donovan Johnson</h1>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Art</a>
-    <a href="contact.html">Contact</a>
-    <h2>Contact Me</h2>
-    <p>Email: thedynamitedj@gmail.com</p>
-    <button>Contact Form</button>
+    <div class="main-container">
+        <h1>Donovan Johnson</h1>
+        <div class="menu-grid">
+            <button type="menu" onclick="location.href='index.html'" class="button-1">
+                Home
+            </button>
+            <button type="menu" onclick="location.href='services.html'" class="button-1">
+                Services
+            </button>
+            <button type="menu" onclick="location.href='portfolio.html'" class="button-1">
+                Portfolio
+            </button>
+            <button type="menu" onclick="location.href='contact.html'" class="button-1">
+                Contact
+            </button>
+        </div> 
+        <div class="contact-card">
+            <h2>Contact Me</h2>
+            <p>Email: thedynamitedj@gmail.com</p>
+            <button class="button-1">Contact Form</button>
+        </div>
+    </div>
 </body>
 </html>
