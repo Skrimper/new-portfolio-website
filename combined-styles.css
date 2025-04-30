@@ -176,10 +176,11 @@ img {
     justify-items: center;
 }
 .slideshow-container {
-    position: relative;
-    width: 100%;
+    margin: 0 auto; /* ⬅ center the whole container */
     max-width: 500px;
+    width: 100%;
     aspect-ratio: 4 / 3;
+    position: relative;
     overflow: hidden;
     border-radius: 12px;
     background-color: #ffffff1a;
@@ -225,6 +226,31 @@ img {
     outline: 2px solid #976bee;
     background-color: #f9f9f9;
     color: black;
+}
+.slideshow-container .prev,
+.slideshow-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s;
+}
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+}
+.slideshow-container .prev {
+    left: 10px;
+}
+.slideshow-container .next {
+    right: 10px;
 }
 @media (max-width: 500px) {
     .button-1 {
