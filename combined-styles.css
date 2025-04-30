@@ -42,6 +42,15 @@ body {
     color: whitesmoke;
     text-decoration-line: none;
   }
+  .grid-container.cards {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    justify-content: center; 
+    gap: 2rem;
+    margin-top: 2rem;
+    min-height: 80vh; 
+  }
   
   button {
     text-decoration-color: whitesmoke;
